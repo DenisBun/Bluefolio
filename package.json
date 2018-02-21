@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack",
     "start": "webpack --watch",
-    "server": "webpack && webpack-dev-server --output-public-path=/dist/ --open", 
+    "server": "webpack && webpack-dev-server --output-public-path=/dist/ --open",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Denis Bunchenko",
@@ -19,5 +19,6 @@
     "style-loader": "^0.20.2",
     "webpack": "^3.11.0",
     "webpack-dev-server": "^2.11.1"
-  }
+  },
+  "dependencies": {}
 }

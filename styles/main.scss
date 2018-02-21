@@ -1,4 +1,12 @@
-.test {
-  background-color: green;
-  height: 20px;
+@import "constants.scss";
+@import "header.scss";
+
+html, body, main {
+  height: 100%;
 }
+
+main {
+  overflow: hidden;
+  background-color: $main-background-color;
+}
+
