@@ -6,6 +6,9 @@
 
   .logo {
     margin-bottom: 20px;
+    @include respond-to(handhelds) { display: block; }
+    @include respond-to(medium-screens) { display: block; }
+    @include respond-to(wide-screens) { display: flex; flex-direction: column; justify-content: center; align-items: center; }
   }
 
   .logo-main {
@@ -16,6 +19,7 @@
     font-size: 76px;
     font-weight: 400;
     line-height: 76px;
+    @include respond-to(handhelds) { font-size: 66px; line-height: 66px }
     padding-bottom: 15px;
   }
 
@@ -30,16 +34,17 @@
   }
 
   .top-nav {
-    margin: -10px -50px 0 -50px;
+   // margin: -10px -50px 0 -50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 
     .item {
-      margin: 10px 50px 10px 50px;
-      // &:nth-last-child() {
-      //   margin-left: -50px;
-      // }
+      margin-right: 10px;
+      margin-bottom: 10px;
+      @include respond-to(tablets) { flex-basis: calc(100% / 4); }
+      @include respond-to(medium-screens) { flex-basis: calc(100% / 4); }
+      @include respond-to(wide-screens) { margin-right: 50px; }      
       .content {
         color: #ffffff;
         font-family: Georgia;

@@ -1,0 +1,15 @@
+.shout {
+  min-height: 277px;  
+  padding: 38px 20px 20px 20px;  
+  text-align: center;
+  color: #3e83bc;
+  font-family: Georgia;
+  @include respond-to(handhelds) { font-size: 50px; line-height: 50px }
+  @include respond-to(tablets) { font-size: 80px; line-height: 80px; }
+  @include respond-to(medium-screens) { font-size: 100px; line-height: 100px; }
+  @include respond-to(wide-screens) { font-size: 140px; line-height: 140px; }  
+  font-weight: 400;
+  
+  /* Text style for "W, elcome" */
+  letter-spacing: -0.14px;
+}
