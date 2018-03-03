@@ -1,0 +1,41 @@
+.latest-work {
+  padding: 25px 20px 30px 20px;
+  min-height: 435px;
+
+  .title {
+    color: #ffffff;
+    font-family: Georgia;
+    font-size: 46px;
+    font-weight: 400;
+    line-height: 46px;
+    margin-bottom: 30px;
+  }
+
+  .item-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -40px -40px;
+    justify-content: center;
+
+
+    .item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 450px;
+      margin: 40px;
+      height: 150px;
+      color: #ffffff;
+      font-family: Georgia;
+      font-size: 24px;
+      font-weight: 400;
+      background-color: #0b1e31;
+      border: 5px solid #a5cee0;
+
+      &:hover {
+        border: 5px solid #3e83bc;
+        cursor: pointer;
+      }
+    }
+  }
+}

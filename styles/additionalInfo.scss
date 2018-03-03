@@ -1,0 +1,12 @@
+.additional-info {
+  min-height: 325px;
+  background-color: #0b2743;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .info-image {
+    display: inline-block;
+    margin-left: 70px;
+  }
+}

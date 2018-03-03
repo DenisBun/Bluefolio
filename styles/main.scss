@@ -3,13 +3,16 @@
 @import "header.scss";
 @import "shout.scss";
 @import "services.scss";
+@import "latestWork.scss";
+@import "additionalInfo.scss";
+@import "footer.scss";
 
 html, body, main {
   height: 100%;
 }
 
 main {
-  overflow: hidden;
+  overflow-x: hidden;
   background-color: $main-background-color;
 }
 
