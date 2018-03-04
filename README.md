@@ -11,6 +11,6 @@ Below you will find some information on how to perform common installation and h
 ```
  - Simply run the app:
 ```sh
-> npm run sever
+> npm run server
 ```
 Webpack will automatically build you css-file and will open layout on special server at "http://localhost:8080/"
