@@ -19,7 +19,8 @@
     font-size: 76px;
     font-weight: 400;
     line-height: 76px;
-    @include respond-to(handhelds) { font-size: 66px; line-height: 66px }
+    @include respond-to(tablets) { font-size: 72px; line-height: 72px; }
+    @include respond-to(handhelds) { font-size: 66px; line-height: 66px; }
     padding-bottom: 15px;
   }
 

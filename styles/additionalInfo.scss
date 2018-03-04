@@ -1,12 +1,144 @@
 .additional-info {
+  box-sizing: border-box;
   min-height: 325px;
+  padding: 30px 20px;
   background-color: #0b2743;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
+  @include respond-to(medium-screens) { justify-content: center; }
+  @include respond-to(tablets) { justify-content: center; }
+  @include respond-to(handhelds) { justify-content: center; }
 
-  .info-image {
-    display: inline-block;
-    margin-left: 70px;
+  .form-wrapper {
+    margin-right: 40px;
+    @include respond-to(tablets) { margin-left: 40px; margin-right: 0; }
+    @include respond-to(handhelds) {  margin-left: 40px; margin-right: 0; } 
   }
+
+  .title {
+    color: #a5cee0;
+    font-family: Georgia;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 8px;
+  }
+
+  .horizontal-line {
+    width: 350px;
+    height: 1px;
+    background-color: #637c90;
+    margin-bottom: 20px;
+  }
+
+  .form {
+    width: 350px;
+
+    .input-wrapper {
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+
+    .label {
+      display: block;
+      color: #a5cee0;
+      font-family: Verdana;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 13px;
+      margin-bottom: 5px;
+    }
+
+    .input {
+      display: inline-block;
+      width: 168px;
+      height: 22px;
+      background-color: #ffffff;
+      border: 2px solid gray;
+      @include respond-to(tablets) { width: 128px; }
+    }
+
+    .message-input {
+      width: 343px;
+      height: 86px;
+      background-color: #ffffff;
+      border: 2px solid gray;
+      margin-bottom: 20px;
+      @include respond-to(tablets) { width: 303px; }
+    }
+
+    .action-button {
+      display: inline-block;
+      width: 67px;
+      height: 28px;
+      border: 2px solid gray;
+      margin-right: 15px;
+      background-color: #f7f7f7;
+    }
+
+
+  }
+
+  .images-and-email {
+    margin-top: 20px;
+    display: flex;    
+    justify-content: space-between;
+    @include respond-to(medium-screens) { flex-wrap: wrap; justify-content: center; }
+    @include respond-to(tablets) { flex-wrap: wrap; justify-content: center; }
+    @include respond-to(handhelds) { flex-wrap: wrap; justify-content: center; }
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-right: 70px;
+
+      .info-image {
+        margin-bottom: 10px;        
+        height: 220px;
+
+        // &:last-of-type {
+        //   width: 180px;
+        // }
+      }
+  
+      .email-hint {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 275px;
+        height: 25px;
+        background-color: #124170;
+        color: #ffffff;
+        font-family: Verdana;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 12px;
+      }
+
+      #email-sub {
+        //display: inline-block;
+        width: 243px;
+        height: 23px;
+        background-color: #ffffff;
+      }
+
+      .go-button {
+        width: 36px;
+        height: 23px;
+        background-color: #f7f7f7;
+        color: #666666;
+        font-family: Verdana;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 14px;
+        text-transform: uppercase;
+      }
+    }
+
+  }
+
 }
